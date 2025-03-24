@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import axios from "../utils/axios";
 
+import { useEffect } from "react";
 export default function Sidebar() {
+   
+
+
   return (
     <div className="w-[20%] h-full border-r-2 border-zinc-400 ml-6 p-1 ai-style-change-2">
 
