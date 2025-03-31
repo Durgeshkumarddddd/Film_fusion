@@ -11,7 +11,8 @@ export default function Home(){
     async function getHeaderWallepaper() {
         try {
             const {data} = await axios.get(`/trending/all/day`)
-             setWallpaper(data)
+            const randomdata =  data.results[(Math.random()*data.results.length).toFixed()];
+            setWallpaper(randomdata);
         }
         catch(error){
             console.log("error is",error);
@@ -20,18 +21,18 @@ export default function Home(){
      
 
       useEffect(()=>{
-        getHeaderWallepaper();
+       !wallpaper && getHeaderWallepaper();
       },[])
 
 
-    return(
+    return wallpaper ? (
        <div className="h-full overflow-hidden flex">
             <Sidebar />
-            <div className="w-[80%] h-full overflow-hidden">
+            <div className="w-[82%] h-full overflow-hidden">
             <Topbar />
-            <Header />
+            <Header data={wallpaper} />
              
             </div>
        </div>
-    );
+    ): <h1 className="text-2xl flex justify-center items-center"> Loading... </h1>;
 } 

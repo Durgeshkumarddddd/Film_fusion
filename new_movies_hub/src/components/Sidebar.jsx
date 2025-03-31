@@ -8,7 +8,7 @@ export default function Sidebar() {
 
 
   return (
-    <div className="w-[20%] h-full border-r-2 border-zinc-400 ml-6 p-1 ai-style-change-2">
+    <div className="w-[18%] h-full border-r-2 border-zinc-400 ml-6 p-1 ai-style-change-2">
 
       <h1 className="mt-8 mb-6">
         <i className="text-[#6556CD]  ri-clapperboard-ai-fill text-xl mt-12 "></i>
@@ -16,7 +16,7 @@ export default function Sidebar() {
       </h1>
 
 
-      <nav className="text-zinc-400 flex flex-col mr-4">
+      <nav className="text-zinc-400 flex flex-col mr-2">
         <h1 className=" text-xl  text-white  mt-4 mb-4 font-semibold"> New Feeds </h1>
 
         <Link className="text-xl p-5 hover:bg-[#6556CD] hover:text-white hover:rounded-xl  "> <i className="ri-fire-fill m-1"></i>  Trending </Link>
