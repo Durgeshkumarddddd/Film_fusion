@@ -53,7 +53,6 @@ export default function Home() {
                     <div>
                         <DropdownFilter fun={(e)=>{ setCategory(e.target.value)}} title={"Filter"} options={['All', 'tv', 'movie', 'web Series',]} />
                         
-
                     </div>
 
                 </div>
