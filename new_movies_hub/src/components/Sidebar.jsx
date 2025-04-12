@@ -8,7 +8,7 @@ export default function Sidebar() {
 
 
   return (
-    <div className="w-[18%] h-full border-r-2 border-zinc-400 ml-6 p-1 ai-style-change-2">
+    <div className="w-[18%] h-screen border-r-2 border-zinc-400 ml-6 p-1 ai-style-change-2 overflow-y-hidden overflow-x-hidden">
 
       <h1 className="mt-8 mb-6">
         <i className="text-[#6556CD]  ri-clapperboard-ai-fill text-xl mt-12 "></i>
